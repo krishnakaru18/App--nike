@@ -34,7 +34,7 @@ const Navbar = () => {
           </div>
           <div className="hidden md:flex md:items-center m-2 p-2">
             {navLinks.map((item) => (
-              <a key={item.label} href={item.href} className="p-3 m-2 cursor-pointer" style={{fontSize: '1rem', fontWeight: 'normal'}}>{item.label}</a>
+              <a key={item.label} href={item.href} className="transform hover:scale-105 focus:outline-none p-3 m-2 cursor-pointer" style={{fontSize: '1rem', fontWeight: 'normal'}}>{item.label}</a>
             ))}
           </div>
           {isOpen && (
