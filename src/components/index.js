@@ -1,19 +1,15 @@
-import About from "./About";
-import Footer from "./Footer";
-import Home from "./Home";
+import Button from "./Button";
 import Nav from "./Nav";
-import NonTech from "./NonTech";
-import Tech from "./Tech";
-import Committee from "./committee";
-
-
+import ShoeCard from "./ShoeCard";
+import PopularProductCard from "./PopularProductCard";
+import ServiceCard from "./ServiceCard";
+import ReviewCard from "./ReviewCard";
 
 export {
-    About,
-    Footer,
-    Home,
+    Button,
     Nav,
-    NonTech,
-    Tech,
-    Committee,
+    ShoeCard,
+    PopularProductCard,
+    ServiceCard,
+    ReviewCard,
 }
