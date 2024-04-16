@@ -1,39 +1,35 @@
-import { CustomerReviews, Footer, 
-  Hero, PopularProducts, Services, 
-  SpecialOffers, Subscribe, SuperQuality 
-} from './sections';
+import { Nav, Home, About, Tech, NonTech, Footer, Committee } from "./components"
+import Headroom from "react-headroom"
 
-import Nav from './components/Nav';
-
-const App = () => (
-  <main className="reltive">
-    <Nav />   
-    <section className="x1:padding-1
-    wide:padding-r padding-b">
-      <Hero />
-    </section>
-    <section className="padding" >
-      <PopularProducts />
-    </section>
-    <section className="padding" >
-      <SpecialOffers />
-    </section>
-    <section className="padding" >
-      <SuperQuality />
-    </section>
-    <section className="padding" >
-      <Services />
-    </section>
-    <section className="bg-pale-blue padding" >
-      <CustomerReviews />
-    </section>
-    <section className="padding-x sm:py-32 py-16 w-full" >
-      <Subscribe />
-    </section>
-    <section className="bg-black padding-x padding-t pb-8" >
+const App = () => {
+  return (
+    <>
+    <Headroom>
+    <div>
+      <Nav />
+    </div>
+    </Headroom>
+    <div>
+      <Home />
+    </div>
+    <div>
+      <About />
+    </div>
+    <div>
+      <Tech />
+    </div>
+    <div>
+      <NonTech />
+    </div>
+    <div>
+      <Committee />
+    </div>
+    <div>
       <Footer />
-    </section>
-  </main>
-);
+    </div>
+    </>
+    
+  )
+}
 
-export default App;
+export default App
